@@ -114,6 +114,8 @@ def processar_menu(menu, nome):
             adicionais(nome, 'X-burguer') # chamando a função 'adicionais' com a infomação escolhida do menu
         elif add == '2':
             confirmar_pedido(nome, 'X-burguer', "")  # Nenhum adicional selecionado
+        else:
+            print('Digite apenas uma das opções acima.') # mensagem de erro para entrada inválida
     elif menu == '2':
         print(f'{os.linesep}{nome}, você selecionou o X-salada, gostaria de algum adicional?{os.linesep}')
         add = input(f'{os.linesep}[1] - Sim.{os.linesep}[2] - Não.{os.linesep}')
@@ -121,6 +123,8 @@ def processar_menu(menu, nome):
             adicionais(nome, 'X-salada')
         elif add == '2':
             confirmar_pedido(nome, 'X-salada', "")  # Nenhum adicional selecionado
+        else:
+            print('Digite apenas uma das opções acima.') # mensagem de erro para entrada inválida
     elif menu == '3':
         print(f'{os.linesep}{nome}, você selecionou o batata frita, gostaria de algum adicional?{os.linesep}')
         add = input(f'{os.linesep}[1] - Sim.{os.linesep}[2] - Não.{os.linesep}')
@@ -128,6 +132,8 @@ def processar_menu(menu, nome):
             adicionais(nome, 'batata frita')
         elif add == '2':
             confirmar_pedido(nome, 'batata frita', "")  # Nenhum adicional selecionado
+        else:
+            print('Digite apenas uma das opções acima.') # mensagem de erro para entrada inválida
     elif menu == '4':
         print(f'Até a próxima, {nome}!') # mensagem de despedida
         sys.exit() # fechar o programa
